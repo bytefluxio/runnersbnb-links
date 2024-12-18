@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>RunnersBnB Links</title>
+   <style>
+      * {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+         font-family: 'Poppins', sans-serif;
+      }
+      body, html {
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: linear-gradient(#ece9e6, #ffffff);
+      }
+      header {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         display: flex;
+         align-items: center;
+         font-size: 2rem;
+         font-weight: 600;
+         color: #fff;
+         background: linear-gradient(to right, #00509E, #00296B);
+         padding: 1rem 2rem;
+      }
+      header svg {
+         width: 48px;
+         height: 48px;
+         margin-right: 1rem;
+      }
+      .link-container {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-gap: 3rem;
+         margin-top: 8rem;
+         width: 80%;
+         justify-items: center; /* Center the links horizontally */
+         align-items: center; /* Center the links vertically */
+      }
+      .link {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         text-decoration: none;
+         color: #333;
+         padding: 2rem;
+         background: white;
+         border-radius: 8px;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         width: 15em;
+         height: 15em;
+      }
+      .link:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .link img {
+         width: 64px;
+         height: 64px;
+         margin-bottom: 1rem;
+         border-radius: 20%;
+         background: #f4f4f4;
+         padding: 0.5rem;
+      }
+      .link div {
+         font-size: 1.4rem;
+         font-weight: 600;
+      }
+      .link p {
+         font-size: 1rem;
+         color: #555;
+         margin-top: 0.5rem;
+      }
+   </style>
+</head>
+<body>
+<header>
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M6.5 3Q5.433 3 4.716 4.192Q4 5.385 4 7q0 1.44.466 2.845q.467 1.405 1.15 2.332l2.153-.53q.364-.8.797-2.124Q9 8.2 9 7q0-1.616-.716-2.808Q7.567 3 6.5 3m1.375 13q.494 0 .81-.37q.315-.368.315-.955q0-.425-.229-.971t-.621-1.127L6 13.116q0 1.307.486 2.096Q6.97 16 7.875 16M17.5 8q-1.067 0-1.784 1.192Q15 10.385 15 12q0 1.2.443 2.51q.444 1.311.788 2.136l2.077.646q.894-1.388 1.293-2.569T20 12q0-1.616-.716-2.808Q18.567 8 17.5 8m-1.375 13q.865 0 1.37-.77T18 18.25l-2.13-.692q-.259.465-.564 1.02T15 19.676q0 .52.332.922q.331.403.793.403m-8.25-4q-1.348 0-2.127-1.06T5 13.26l-.604-1.118q-.506-.79-.95-2.213Q3 8.506 3 7q0-2.152.996-3.576T6.5 2q1.529 0 2.515 1.484Q10 4.967 10 7q0 1.316-.41 2.608t-.786 2.138l.45.748q.296.485.521 1.084T10 14.675q0 1.002-.599 1.664T7.875 17m8.25 5q-.927 0-1.526-.662T14 19.676q0-.498.225-1.097q.225-.6.521-1.084l.45-.748q-.358-.827-.777-2.129T14 12q0-2.033.986-3.516Q15.97 7 17.5 7q1.508 0 2.504 1.424T21 12q0 1.506-.436 2.907q-.435 1.4-.96 2.23l-.604.95q.006 1.332-.636 2.623Q17.723 22 16.125 22"/></svg>
+   RunnersBnB Links
+</header>
+<div class="link-container">
+   <a class="link" href="https://www.notion.so/160dba935aaa8010a140d3f758007601?v=160dba935aaa80ca8ce8000cf553f224" target="_blank">
+      <img src="assets/notion64.png" alt="Notion">
+      <div>Notion</div>
+      <p>documentation, project management and meeting calendar</p>
+   </a>
+   <a class="link" href="https://runnersbnb.slack.com" target="_blank">
+      <img src="assets/slack64.png" alt="Slack">
+      <div>Slack</div>
+      <p>chat, ci/cd and monitoring notifications</p>
+   </a>
+   <a class="link" href="https://github.com/bytefluxio/RunnersBnB-Backend" target="_blank">
+      <img src="assets/github64.png" alt="Github">
+      <div>Backend Repo</div>
+   </a>
+   <a class="link" href="https://github.com/bytefluxio/RunnersBnB-Frontend" target="_blank">
+      <img src="assets/github64.png" alt="Github">
+      <div>Frontend Repo</div>
+   </a>
+</div>
+</body>
 </html>
-
